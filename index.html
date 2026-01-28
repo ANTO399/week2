@@ -23,18 +23,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="theme-switcher">
-        <input type="checkbox" id="theme-toggle">
-        <label for="theme-toggle">다크 모드</label>
+    <div class="top-bar">
+        <div class="theme-switcher">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" data-ko="다크 모드" data-en="Dark Mode">다크 모드</label>
+        </div>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+            </select>
+        </div>
     </div>
     <div class="container">
-        <h1>주사위 던지기</h1>
+        <h1 data-ko="주사위 던지기" data-en="Dice Roll">주사위 던지기</h1>
         <div class="dice-container">
             <div class="dice" id="dice1">1</div>
             <div class="dice" id="dice2">1</div>
         </div>
-        <button id="roll-button">주사위 굴리기</button>
-        <div id="result"></div>
+        <button id="roll-button" data-ko="주사위 굴리기" data-en="Roll Dice">주사위 굴리기</button>
+        <div id="result" data-ko="결과: " data-en="Result: "></div>
     </div>
     <script src="main.js"></script>
 </body>

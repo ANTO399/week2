@@ -17,14 +17,34 @@ body {
     color: #fff;
 }
 
-.theme-switcher {
+.top-bar {
     position: absolute;
     top: 20px;
     right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.theme-switcher {
     color: #fff;
 }
 
 .dark-mode .theme-switcher {
+    color: #fff;
+}
+
+.language-switcher select {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Jua', sans-serif;
+}
+
+.language-switcher select option {
+    background: #333;
     color: #fff;
 }
 
