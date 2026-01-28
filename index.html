@@ -18,8 +18,8 @@
         })(window, document, "clarity", "script", "v8dot1sa98");
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주사위 던지기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title data-ko="벽돌 깨기" data-en="Breakout Game">벽돌 깨기</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,13 +36,9 @@
         </div>
     </div>
     <div class="container">
-        <h1 data-ko="주사위 던지기" data-en="Dice Roll">주사위 던지기</h1>
-        <div class="dice-container">
-            <div class="dice" id="dice1">1</div>
-            <div class="dice" id="dice2">1</div>
-        </div>
-        <button id="roll-button" data-ko="주사위 굴리기" data-en="Roll Dice">주사위 굴리기</button>
-        <div id="result" data-ko="결과: " data-en="Result: "></div>
+        <h1 data-ko="벽돌 깨기" data-en="Breakout Game">벽돌 깨기</h1>
+        <canvas id="gameCanvas" width="480" height="320"></canvas>
+        <button id="replay-button" style="display: none;" data-ko="다시하기" data-en="Replay">다시하기</button>
     </div>
     <script src="main.js"></script>
 </body>
