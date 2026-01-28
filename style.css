@@ -7,6 +7,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .container {
@@ -32,6 +44,10 @@ body {
     font-weight: bold;
 }
 
+.dark-mode .dice {
+    border-color: #f4f4f4;
+}
+
 #roll-button {
     padding: 10px 20px;
     font-size: 18px;
@@ -40,6 +56,11 @@ body {
     background-color: #333;
     color: #fff;
     border-radius: 5px;
+}
+
+.dark-mode #roll-button {
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 #result {

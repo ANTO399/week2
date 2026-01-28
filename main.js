@@ -2,6 +2,8 @@ const dice1 = document.getElementById('dice1');
 const dice2 = document.getElementById('dice2');
 const rollButton = document.getElementById('roll-button');
 const result = document.getElementById('result');
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
 
 rollButton.addEventListener('click', () => {
     // Disable the button during animation
@@ -32,4 +34,8 @@ rollButton.addEventListener('click', () => {
             rollButton.disabled = false;
         }
     }, 100);
+});
+
+themeToggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
 });
