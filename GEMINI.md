@@ -166,3 +166,5 @@ When requested for Firebase add the following the server configurations to .idx/
         }
     }
 }
+
+테스트 메시지입니다.
